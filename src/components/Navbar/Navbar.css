@@ -78,11 +78,15 @@
 
 /* === Mobile Menu === */
 @media (max-width: 768px) {
-  .hamburger {
-    background: #2c5364; /* Light red for testing */
-    padding: 10px;
-    display: flex;
-  }
+.hamburger {
+  background: #2c5364;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  right: 30px;       /* Shift left */
+  margin-left: auto; /* Push it toward the left side of container */
+}
+
 
   .navbar-links {
     position: absolute;
