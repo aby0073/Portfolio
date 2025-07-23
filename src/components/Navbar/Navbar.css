@@ -1,0 +1,104 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: transparent; /* Initially transparent */
+  padding: 0.4rem 1.5rem; /* Reduced padding */
+  z-index: 1000;
+  transition: background 0.3s ease, padding 0.3s ease;
+  /* backdrop-filter: blur(6px); */
+}
+
+/* When scrolled, add a solid cyber ice background */
+.navbar.scrolled {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00bcd4; /* Cyan accent */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar-link {
+  color: #e0f7fa;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #00bcd4;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 24px;
+  height: 3px;
+  background-color: #e0f7fa;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger animations */
+.rotate1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.rotate2 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hide {
+  opacity: 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #102027;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .navbar-links.open {
+    max-height: 220px;
+    padding: 1rem 0;
+  }
+
+  .navbar-link {
+    padding: 0.75rem;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

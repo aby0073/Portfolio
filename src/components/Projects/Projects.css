@@ -1,0 +1,47 @@
+.projects {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Cyber Ice gradient */
+  color: #e0f7fa;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-note {
+  text-align: center;
+  color: #b2ebf2;
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
+}
+
+.show-more-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.show-more-btn {
+  background-color: #00bcd4;
+  color: #102027;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #00acc1;
+}

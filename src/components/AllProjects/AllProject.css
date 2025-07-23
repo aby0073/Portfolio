@@ -1,0 +1,42 @@
+.all-projects {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Cyber Ice Gradient */
+  color: #e0f7fa;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.all-projects .section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00e5ff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.back-home-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.back-home-btn {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-home-btn:hover {
+  background-color: #0097a7;
+}

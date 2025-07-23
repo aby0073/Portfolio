@@ -1,0 +1,33 @@
+.footer {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #e0f7fa;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #b2ebf2;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.footer-links a {
+  color: #00bcd4;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #80deea;
+}
