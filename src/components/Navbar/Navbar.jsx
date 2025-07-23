@@ -11,8 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 80); // Change at 80px scroll
+      setIsScrolled(window.scrollY > 80);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -25,11 +24,11 @@ const Navbar = () => {
         <h2 className="navbar-brand">PORTFOLIO</h2>
 
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <Link to="home" smooth={true} duration={100} onClick={closeMenu} className="navbar-link">Home</Link>
-          <Link to="about" smooth={true} duration={100} onClick={closeMenu} className="navbar-link">About</Link>
-          <Link to="skills" smooth={true} duration={100} onClick={closeMenu} className="navbar-link">Skills</Link>
-          <Link to="projects" smooth={true} duration={100} onClick={closeMenu} className="navbar-link">Projects</Link>
-          <Link to="contact" smooth={true} duration={100} onClick={closeMenu} className="navbar-link">Contact</Link>
+          <Link to="home" smooth duration={100} onClick={closeMenu} className="navbar-link">Home</Link>
+          <Link to="about" smooth duration={100} onClick={closeMenu} className="navbar-link">About</Link>
+          <Link to="skills" smooth duration={100} onClick={closeMenu} className="navbar-link">Skills</Link>
+          <Link to="projects" smooth duration={100} onClick={closeMenu} className="navbar-link">Projects</Link>
+          <Link to="contact" smooth duration={100} onClick={closeMenu} className="navbar-link">Contact</Link>
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>
