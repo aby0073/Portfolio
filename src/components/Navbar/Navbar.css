@@ -79,7 +79,7 @@
 /* === Mobile Menu === */
 @media (max-width: 768px) {
 .hamburger {
-  background: #2c5364;
+  /* background: #2c5364; */
   padding: 10px;
   display: flex;
   position: relative;
