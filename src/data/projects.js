@@ -1,19 +1,19 @@
 export const projects = [
   {
-    id: 1,
+   id: 1,
+   title: "Food Ordering Website",
+   description: "A responsive movie ticket booking interface built using HTML and CSS featuring movie listings",
+   image: "https://raw.githubusercontent.com/aby0073/IMAGES/main/Screenshot%20(178).png",
+   link: "https://foodie-hub-website.netlify.app/",
+   tags: ["Fullstack", "React", "Node","Admin Panel"],
+  },
+  {
+    id: 2,
     title: "Netflix Clone",
     description: "A responsive Netflix frontend clone built with React and TMDB API, showcasing movies in a clean, modern UI.",
     image: "https://raw.githubusercontent.com/aby0073/IMAGES/main/Screenshot%20(232).png",
     link: "https://net-flix-743829.netlify.app/",
     tags: ["React", "CSS", "TMDB API","Frontend"],
-  },
-  {
-   id: 2,
-   title: "Food Ordering Website",
-   description: "A responsive movie ticket booking interface built using HTML and CSS featuring movie listings",
-   image: "https://raw.githubusercontent.com/aby0073/IMAGES/main/Screenshot%20(178).png",
-   link: "https://github.com/aby0073/Food_delivery_app",
-   tags: ["Fullstack", "React", "Node","Admin Panel"],
   },
   {
    id: 3,
