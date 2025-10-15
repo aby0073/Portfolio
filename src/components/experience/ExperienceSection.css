@@ -1,0 +1,127 @@
+/* ===========================
+   Experience Section Styles
+   =========================== */
+
+.experience-section {
+  min-height: 60vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #e0f7fa;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Title */
+.experience-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Experience Card */
+.experience-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 188, 212, 0.3);
+}
+
+/* Company Logo */
+.experience-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+}
+
+/* Text Content */
+.experience-content {
+  text-align: left;
+  max-width: 600px;
+}
+
+.experience-role {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.experience-company {
+  font-size: 1.2rem;
+  color: #80deea;
+  margin: 0.3rem 0;
+}
+
+.experience-duration {
+  font-size: 1rem;
+  color: #b2ebf2;
+  margin-bottom: 1rem;
+}
+
+.experience-description {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #c3f2f5;
+  line-height: 1.6;
+}
+
+.experience-description li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .experience-content {
+    text-align: center;
+  }
+
+  .experience-description {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-role {
+    font-size: 1.2rem;
+  }
+
+  .experience-company {
+    font-size: 1rem;
+  }
+
+  .experience-description {
+    font-size: 0.95rem;
+  }
+}

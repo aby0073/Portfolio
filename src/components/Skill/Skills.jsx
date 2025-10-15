@@ -8,6 +8,8 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaGithub,
+  FaBootstrap,
+  FaDatabase
 } from 'react-icons/fa';
 import {
   SiMongodb,
@@ -15,6 +17,7 @@ import {
   SiExpress,
   SiNextdotjs,
   SiTailwindcss,
+  SiMysql
 } from 'react-icons/si';
 
 const skills = [
@@ -22,13 +25,13 @@ const skills = [
   { name: 'CSS', icon: <FaCss3Alt color="#264de4" /> },
   { name: 'JavaScript', icon: <FaJs color="#f0db4f" /> },
   { name: 'React.js', icon: <FaReact color="#61DBFB" /> },
-  { name: 'Next.js', icon: <SiNextdotjs color="#ffffff" /> },
   { name: 'Node.js', icon: <FaNodeJs color="#68a063" /> },
   { name: 'Express.js', icon: <SiExpress color="#ffffff" /> },
   { name: 'MongoDB', icon: <SiMongodb color="#4DB33D" /> },
-  { name: 'Git', icon: <FaGitAlt color="#f1502f" /> },
-  { name: 'GitHub', icon: <FaGithub color="#ffffff" /> },
+  { name: 'MySQL', icon: <SiMysql color="#00758f" /> },
+  { name: 'Bootstrap', icon: <FaBootstrap color="#7952b3" /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss color="#38bdf8" /> },
+  { name: 'Git', icon: <FaGitAlt color="#f1502f" /> },
   { name: 'Figma', icon: <SiFigma color="#a259ff" /> },
 ];
 
