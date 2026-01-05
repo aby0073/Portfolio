@@ -1,116 +1,176 @@
-/* === Base Navbar === */
+/* Professional Navbar */
 .navbar {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   background: transparent;
-  padding: 0.4rem 1.5rem;
+  padding: 1rem 0;
   z-index: 1000;
-  transition: background 0.3s ease, padding 0.3s ease;
+  transition: all var(--transition-base);
 }
 
 .navbar.scrolled {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: var(--container-max);
   margin: 0 auto;
+  padding: 0 var(--container-padding);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* === Brand === */
+/* Brand/Logo */
 .navbar-brand {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #00bcd4;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: var(--transition-base);
+  cursor: pointer;
 }
 
-/* === Nav Links (desktop) === */
+.navbar-brand:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* Nav Links */
 .navbar-links {
   display: flex;
-  gap: 1.2rem;
-  transition: all 0.3s ease-in-out;
+  align-items: center;
+  gap: 2rem;
+  transition: all var(--transition-base);
 }
 
 .navbar-link {
-  color: #e0f7fa;
+  color: var(--text-secondary);
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: color 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: var(--transition-fast);
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  transition: width var(--transition-base);
 }
 
 .navbar-link:hover {
-  color: #00bcd4;
+  color: var(--text-primary);
 }
 
-/* === Hamburger Styles === */
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 2001; /* Ensures it's above menu */
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.hamburger:hover {
+  background: rgba(59, 130, 246, 0.1);
 }
 
 .bar {
-  width: 24px;
-  height: 3px;
-  background-color: #e0f7fa;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 25px;
+  height: 2.5px;
+  background: var(--text-primary);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
 }
 
-.rotate1 {
-  transform: rotate(45deg) translate(5px, 5px);
+.bar.rotate1 {
+  transform: rotate(45deg) translate(6px, 6px);
+  background: var(--accent-primary);
 }
 
-.rotate2 {
-  transform: rotate(-45deg) translate(5px, -5px);
+.bar.rotate2 {
+  transform: rotate(-45deg) translate(6px, -6px);
+  background: var(--accent-primary);
 }
 
-.hide {
+.bar.hide {
   opacity: 0;
+  transform: scaleX(0);
 }
 
-/* === Mobile Menu === */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-.hamburger {
-  /* background: #2c5364; */
-  padding: 10px;
-  display: flex;
-  position: relative;
-  right: 30px;       /* Shift left */
-  margin-left: auto; /* Push it toward the left side of container */
-}
-
+  .hamburger {
+    display: flex;
+  }
 
   .navbar-links {
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 70px;
     left: 0;
     right: 0;
     flex-direction: column;
     align-items: center;
-    background-color: #102027;
+    background: rgba(17, 24, 39, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out, padding 0.3s ease;
-    display: flex; /* Always render, but hidden unless open */
+    gap: 0;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+    transition: all var(--transition-base);
   }
 
   .navbar-links.open {
-    max-height: 300px;
-    padding: 1rem 0;
-    gap: 1rem;
+    max-height: 400px;
+    padding: 2rem 0;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 
   .navbar-link {
-    padding: 0.75rem;
+    padding: 1rem 2rem;
     text-align: center;
     width: 100%;
+    font-size: 1.1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .navbar-link:hover {
+    background: rgba(59, 130, 246, 0.1);
+  }
+
+  .navbar-link::after {
+    display: none;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
   }
 }
