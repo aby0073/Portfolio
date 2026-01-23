@@ -11,17 +11,21 @@ const AllProjects = () => {
   }, []);
 
   return (
-    <section className="projects all-projects">
-      <h2 className="section-title">All Projects</h2>
+    <section className="all-projects">
+      <div className="container" data-aos="fade-up">
+        <h2 className="section-title">All Project Portfolio</h2>
 
-      <div className="back-home-wrapper">
-        <Link to="/" className="back-home-btn">← Back to Home</Link>
-      </div>
+        <div className="back-home-wrapper">
+          <Link to="/" className="back-home-btn">
+            <span>←</span> Back to Home
+          </Link>
+        </div>
 
-      <div className="projects-grid">
-        {projects.map(project => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+        <div className="projects-grid">
+          {projects.map(project => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </section>
   );
