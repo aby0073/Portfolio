@@ -1,42 +1,89 @@
+/* All Projects Page - Elite Elite Design */
 .all-projects {
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Cyber Ice Gradient */
-  color: #e0f7fa;
-  text-align: center;
+  padding: 120px 2rem;
+  background-color: #030712;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Page Background Glows */
+.all-projects::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.05), transparent 70%);
+  filter: blur(80px);
+  z-index: 0;
 }
 
 .all-projects .section-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #00e5ff;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #fff 30%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .back-home-wrapper {
-  text-align: center;
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
 }
 
 .back-home-btn {
-  display: inline-block;
-  background-color: #00bcd4;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid transparent;
 }
 
 .back-home-btn:hover {
-  background-color: #0097a7;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-5px);
+}
+
+.all-projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .all-projects {
+    padding: 80px 1rem;
+  }
+
+  .all-projects .section-title {
+    font-size: 2.5rem;
+  }
+
+  .all-projects .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

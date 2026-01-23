@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,7 +14,9 @@ import ScrollToTop from './components/ScrollToTop';
 import About from './components/About/About';
 import ExperienceSection from './components/experience/ExperienceSection';
 
-const App = () => {
+const AppContent = () => {
+  const location = useLocation();
+  
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -23,10 +25,13 @@ const App = () => {
     });
   }, []);
 
+  // Hide navbar on /projects route
+  const showNavbar = location.pathname !== '/projects';
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
-      <Navbar />
+      {showNavbar && <Navbar />}
       <Routes>
         <Route
           path="/"
@@ -44,6 +49,14 @@ const App = () => {
         <Route path="/projects" element={<AllProjects />} />
       </Routes>
       <Footer />
+    </>
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 };

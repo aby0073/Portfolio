@@ -17,9 +17,9 @@ const Projects = () => {
       </div>
 
       {projects.length > 3 && (
-        <div className="show-more-wrapper">
+        <div className="show-more-wrapper" data-aos="zoom-in">
           <Link to="/projects" className="show-more-btn">
-            View All Projects →
+            View All Projects <span>→</span>
           </Link>
         </div>
       )}
