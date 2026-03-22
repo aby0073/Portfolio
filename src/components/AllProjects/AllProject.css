@@ -1,7 +1,11 @@
 /* All Projects Page - Elite Elite Design */
 .all-projects {
   padding: 120px 2rem;
+<<<<<<< HEAD
   background-color: #040b08;
+=======
+  background-color: #030712;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -15,7 +19,11 @@
   left: -5%;
   width: 500px;
   height: 500px;
+<<<<<<< HEAD
   background: radial-gradient(circle, rgba(16, 185, 129, 0.05), transparent 70%);
+=======
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.05), transparent 70%);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   filter: blur(80px);
   z-index: 0;
 }
@@ -25,7 +33,11 @@
   font-weight: 800;
   text-align: center;
   margin-bottom: 20px;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #fff 30%, #34d399 100%);
+=======
+  background: linear-gradient(135deg, #fff 30%, #60a5fa 100%);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

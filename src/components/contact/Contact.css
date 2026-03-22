@@ -1,7 +1,11 @@
 /* Contact Section - Elite Professional Design */
 .contact-section {
   padding: 120px 0;
+<<<<<<< HEAD
   background-color: #040b08;
+=======
+  background-color: #030712;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   position: relative;
   overflow: hidden;
 }
@@ -13,7 +17,11 @@
   transform: translate(-50%, -50%);
   width: 1000px;
   height: 1000px;
+<<<<<<< HEAD
   background: radial-gradient(circle, rgba(16, 185, 129, 0.03), transparent 70%);
+=======
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.03), transparent 70%);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   z-index: 0;
   pointer-events: none;
 }
@@ -43,7 +51,11 @@
 
 /* 1. Info Card Styling */
 .contact-info .info-card {
+<<<<<<< HEAD
   background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(4, 11, 8, 0.5));
+=======
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.5));
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 30px;
@@ -82,13 +94,22 @@
 .info-icon {
   width: 50px;
   height: 50px;
+<<<<<<< HEAD
   background: rgba(16, 185, 129, 0.1);
   border: 1px solid rgba(16, 185, 129, 0.2);
+=======
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   color: #34d399;
+=======
+  color: #60a5fa;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   font-size: 1.2rem;
   flex-shrink: 0;
 }
@@ -112,7 +133,11 @@
 }
 
 .info-text a:hover {
+<<<<<<< HEAD
   color: #34d399;
+=======
+  color: #60a5fa;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 .social-circles {
@@ -136,10 +161,17 @@
 }
 
 .social-circles a:hover {
+<<<<<<< HEAD
   background: #10b981;
   color: #fff;
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+=======
+  background: #3b82f6;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 /* 2. Form Styling */
@@ -168,7 +200,11 @@
 }
 
 .form-group input, .form-group textarea {
+<<<<<<< HEAD
   background: rgba(4, 11, 8, 0.6);
+=======
+  background: rgba(15, 23, 42, 0.6);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 15px 20px;
@@ -180,14 +216,24 @@
 
 .form-group input:focus, .form-group textarea:focus {
   outline: none;
+<<<<<<< HEAD
   border-color: #10b981;
   background: rgba(4, 11, 8, 0.8);
   box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+=======
+  border-color: #3b82f6;
+  background: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 .submit-btn-premium {
   margin-top: 10px;
+<<<<<<< HEAD
   background: #10b981;
+=======
+  background: #3b82f6;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   color: #fff;
   border: none;
   padding: 18px 30px;
@@ -205,9 +251,15 @@
 }
 
 .submit-btn-premium:hover {
+<<<<<<< HEAD
   background: #059669;
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(16, 185, 129, 0.4);
+=======
+  background: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.4);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 .plane-icon {
