@@ -1,11 +1,7 @@
 /* Projects Section - Elite Design */
 .projects {
   padding: 120px 0;
-<<<<<<< HEAD
   background-color: #040b08;
-=======
-  background-color: #030712;
->>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   position: relative;
   overflow: hidden;
 }
@@ -56,17 +52,10 @@
 }
 
 .show-more-btn:hover {
-<<<<<<< HEAD
   background: rgba(16, 185, 129, 0.1);
   border-color: #10b981;
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(16, 185, 129, 0.2);
-=======
-  background: rgba(59, 130, 246, 0.1);
-  border-color: #3b82f6;
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
->>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   letter-spacing: 1px;
 }
 
