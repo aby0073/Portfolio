@@ -50,98 +50,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="hero">
-      {/* Background Ornaments */}
-      <div className="hero-bg-blobs">
-        <div className="blob blob-1"></div>
-        <div className="blob blob-2"></div>
-        <div className="blob blob-3"></div>
-      </div>
-      <div className="hero-grid-overlay"></div>
-
-      <div className="hero-container">
-        <div className="hero-content" data-aos="fade-right">
-          <div className="hero-badge">
-            <span className="badge-dot"></span>
-            Available for opportunities
-          </div>
-          
-          <h1 className="hero-title">
-            <span className="title-intro">Hi, I'm</span>
-            <span className="title-name"> {fullTitle}</span>
-          </h1>
-          
-          <div className="hero-subtitle-wrapper">
-            <p className="hero-subtitle">
-              {subtitleText}<span className="cursor">|</span>
-            </p>
-          </div>
-          
-          <p className="hero-description">
-            Crafting digital excellence through the <strong>MERN stack</strong>. 
-            I build robust full-stack applications with a focus on 
-            performance, scalability, and seamless user experiences.
-          </p>
-
-          <div className="hero-actions">
-            <a href="#projects" className="btn btn-primary">
-              Explore Projects <FaArrowRight />
-            </a>
-            <a href="#contact" className="btn btn-outline">
-              Let's Connect
-            </a>
-          </div>
-
-          <div className="hero-social">
-            <a href="https://github.com/aby0073" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaGithub />
-            </a>
-            <a href="https://linkedin.com/in/abin-roy-s" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaLinkedin />
-            </a>
-            <a href="mailto:abinroy0073@gmail.com" className="social-link">
-              <FaEnvelope />
-            </a>
-          </div>
-        </div>
-
-        <div className="hero-visual" data-aos="zoom-in">
-          <div className="hero-visual-wrapper">
-            <div className="visual-glow"></div>
-            <div className="image-outer-ring"></div>
-            <div className="image-inner-ring"></div>
-            
-            <div className="floating-elements">
-              <div className="float-item item-1">
-                <FaCode />
-                <span>React</span>
-              </div>
-              <div className="float-item item-2">
-                <span className="n-icon">N</span>
-                <span>Node.js</span>
-              </div>
-              <div className="float-item item-3">
-                <span className="db-icon">DB</span>
-                <span>MongoDB</span>
-              </div>
-            </div>
-
-            <div className="profile-container">
-              <img 
-                src="/abin.png" 
-                alt="Abin Roy S" 
-                className="hero-image"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="scroll-hint">
-        <div className="mouse-icon">
-          <div className="scroll-wheel"></div>
-        </div>
-      </div>
+    <section id="home" className="hero" data-aos="slide-down">
+      <h1 className="hero-title">{fullTitle}<span className="cursor"></span></h1>
+      <p className="hero-subtitle">{subtitleText}<span className="cursor">|</span></p>
+      <a href="#projects" className="hero-button">View My Work</a>
     </section>
   );
 };

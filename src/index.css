@@ -2,6 +2,18 @@
 
 :root {
   /* Professional Color Palette */
+<<<<<<< HEAD
+  --bg-primary: #06130e;
+  --bg-secondary: #0a1d15;
+  --bg-tertiary: #112f22;
+  --bg-hover: #194532;
+  
+  /* Accent Colors */
+  --accent-primary: #10b981;
+  --accent-secondary: #14b8a6;
+  --accent-gradient: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  --accent-glow: rgba(16, 185, 129, 0.2);
+=======
   --bg-primary: #0a0e17;
   --bg-secondary: #111827;
   --bg-tertiary: #1f2937;
@@ -12,16 +24,25 @@
   --accent-secondary: #8b5cf6;
   --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --accent-glow: rgba(59, 130, 246, 0.2);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   
   /* Text Colors */
   --text-primary: #f9fafb;
   --text-secondary: #d1d5db;
   --text-muted: #9ca3af;
+<<<<<<< HEAD
+  --text-accent: #34d399;
+  
+  /* Borders & Shadows */
+  --border-color: #194532;
+  --border-subtle: #112f22;
+=======
   --text-accent: #60a5fa;
   
   /* Borders & Shadows */
   --border-color: #374151;
   --border-subtle: #1f2937;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.3);

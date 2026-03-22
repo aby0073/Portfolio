@@ -14,7 +14,11 @@
 .project-card:hover {
   transform: translateY(-10px);
   background: rgba(255, 255, 255, 0.04);
+<<<<<<< HEAD
+  border-color: rgba(52, 211, 153, 0.3);
+=======
   border-color: rgba(96, 165, 250, 0.3);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -39,7 +43,11 @@
 .project-overlay {
   position: absolute;
   inset: 0;
+<<<<<<< HEAD
+  background: rgba(2, 5, 3, 0.8);
+=======
   background: rgba(3, 7, 18, 0.8);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +74,11 @@
 .overlay-link {
   width: 50px;
   height: 50px;
+<<<<<<< HEAD
+  background: #10b981;
+=======
   background: #3b82f6;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -77,7 +89,11 @@
 }
 
 .overlay-link:hover {
+<<<<<<< HEAD
+  background: #059669;
+=======
   background: #2563eb;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   transform: scale(1.1);
 }
 
@@ -112,11 +128,19 @@
 .project-tag {
   font-size: 0.75rem;
   font-weight: 600;
+<<<<<<< HEAD
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 4px 12px;
+  border-radius: 50px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+=======
   color: #3b82f6;
   background: rgba(59, 130, 246, 0.1);
   padding: 4px 12px;
   border-radius: 50px;
   border: 1px solid rgba(59, 130, 246, 0.2);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 /* Responsive */

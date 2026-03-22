@@ -1,7 +1,11 @@
 /* Experience Section - Elite Timeline Design */
 .experience-section {
   padding: 120px 0;
+<<<<<<< HEAD
+  background-color: #040b08;
+=======
   background-color: #030712;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   position: relative;
   overflow: hidden;
 }
@@ -13,7 +17,11 @@
   transform: translate(-50%, -50%);
   width: 800px;
   height: 800px;
+<<<<<<< HEAD
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.05), transparent 70%);
+=======
   background: radial-gradient(circle, rgba(59, 130, 246, 0.05), transparent 70%);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   z-index: 0;
   pointer-events: none;
 }
@@ -28,7 +36,11 @@
 .experience-title {
   font-size: 3rem;
   font-weight: 800;
+<<<<<<< HEAD
+  background: linear-gradient(135deg, #fff 0%, #34d399 100%);
+=======
   background: linear-gradient(135deg, #fff 0%, #60a5fa 100%);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,8 +70,13 @@
   height: 100%;
   background: linear-gradient(to bottom, 
     transparent, 
+<<<<<<< HEAD
+    rgba(52, 211, 153, 0.3) 15%, 
+    rgba(52, 211, 153, 0.3) 85%, 
+=======
     rgba(96, 165, 250, 0.3) 15%, 
     rgba(96, 165, 250, 0.3) 85%, 
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
     transparent
   );
 }
@@ -79,16 +96,28 @@
   transform: translateX(-50%);
   width: 45px;
   height: 45px;
+<<<<<<< HEAD
+  background: #091b10;
+  border: 2px solid #10b981;
+=======
   background: #1e293b;
   border: 2px solid #3b82f6;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+  color: #34d399;
+  font-size: 1.2rem;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+=======
   color: #60a5fa;
   font-size: 1.2rem;
   z-index: 10;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 /* Timeline Content Alignment */
@@ -120,7 +149,11 @@
 
 .experience-card-premium:hover {
   background: rgba(255, 255, 255, 0.05);
+<<<<<<< HEAD
+  border-color: rgba(52, 211, 153, 0.4);
+=======
   border-color: rgba(96, 165, 250, 0.4);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
@@ -166,7 +199,11 @@
 }
 
 .company-name {
+<<<<<<< HEAD
+  color: #34d399;
+=======
   color: #60a5fa;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   font-weight: 600;
   margin: 0;
   font-size: 1rem;
@@ -186,7 +223,11 @@
 
 .experience-date svg {
   font-size: 0.9rem;
+<<<<<<< HEAD
+  color: #34d399;
+=======
   color: #60a5fa;
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 /* Card Body */
@@ -212,9 +253,15 @@
   top: 10px;
   width: 6px;
   height: 6px;
+<<<<<<< HEAD
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+=======
   background-color: #3b82f6;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
 }
 
 .card-footer-glow {
@@ -223,7 +270,11 @@
   right: 0;
   width: 100px;
   height: 100px;
+<<<<<<< HEAD
+  background: radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.1), transparent 70%);
+=======
   background: radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.1), transparent 70%);
+>>>>>>> 1b4d5bdae32cf7452e0269038cce1ddb058f53f0
   pointer-events: none;
 }
 
