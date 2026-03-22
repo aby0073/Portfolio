@@ -128,7 +128,7 @@ const Hero = () => {
 
             <div className="profile-container">
               <img 
-                src="/abin.png" 
+                src="/me.jpeg" 
                 alt="Abin Roy S" 
                 className="hero-image"
               />

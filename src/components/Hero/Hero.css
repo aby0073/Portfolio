@@ -6,7 +6,7 @@
   justify-content: center;
   position: relative;
   padding: 8rem 0 4rem;
-  background-color: #030712;
+  background-color: #040b08;
   overflow: hidden;
 }
 
@@ -26,15 +26,15 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15), transparent 70%);
   border-radius: 50%;
   filter: blur(80px);
   animation: blobMove 20s linear infinite alternate;
 }
 
-.blob-1 { top: -10%; right: -5%; background: radial-gradient(circle, rgba(139, 92, 246, 0.2), transparent 70%); }
-.blob-2 { bottom: -10%; left: -5%; background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent 70%); }
-.blob-3 { top: 40%; left: 30%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(236, 72, 153, 0.1), transparent 70%); }
+.blob-1 { top: -10%; right: -5%; background: radial-gradient(circle, rgba(20, 184, 166, 0.2), transparent 70%); }
+.blob-2 { bottom: -10%; left: -5%; background: radial-gradient(circle, rgba(16, 185, 129, 0.2), transparent 70%); }
+.blob-3 { top: 40%; left: 30%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(163, 230, 53, 0.1), transparent 70%); }
 
 @keyframes blobMove {
   from { transform: translate(0, 0) scale(1); }
@@ -81,7 +81,7 @@
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #60a5fa;
+  color: #34d399;
   backdrop-filter: blur(10px);
   width: fit-content;
 }
@@ -111,7 +111,7 @@
 }
 
 .title-name {
-  background: linear-gradient(135deg, #fff 30%, #60a5fa 100%);
+  background: linear-gradient(135deg, #fff 30%, #34d399 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -133,7 +133,7 @@
 
 .hero-description strong {
   color: #fff;
-  border-bottom: 1px dashed #60a5fa;
+  border-bottom: 1px dashed #34d399;
 }
 
 .hero-actions {
@@ -153,14 +153,14 @@
 }
 
 .btn-primary {
-  background: #3b82f6;
+  background: #10b981;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background: #2563eb;
+  background: #059669;
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
 }
 
 .btn-outline {
@@ -190,7 +190,7 @@
 }
 
 .social-link:hover {
-  color: #60a5fa;
+  color: #34d399;
   transform: translateY(-3px) scale(1.1);
 }
 
@@ -211,7 +211,7 @@
 .visual-glow {
   position: absolute;
   inset: -20px;
-  background: radial-gradient(circle, rgba(96, 165, 250, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(52, 211, 153, 0.2) 0%, transparent 70%);
   filter: blur(20px);
   z-index: 1;
 }
@@ -219,7 +219,7 @@
 .image-outer-ring {
   position: absolute;
   inset: -10px;
-  border: 1px solid rgba(96, 165, 250, 0.2);
+  border: 1px solid rgba(52, 211, 153, 0.2);
   border-radius: 50%;
   animation: rotate 15s linear infinite;
 }
@@ -276,7 +276,7 @@
   animation: floatAnim 4s ease-in-out infinite;
 }
 
-.item-1 { top: 10%; right: -5%; animation-delay: 0s; color: #61DAFB; }
+.item-1 { top: 10%; right: -5%; animation-delay: 0s; color: #34d399; }
 .item-2 { bottom: 20%; left: -10%; animation-delay: 1s; color: #68A063; }
 .item-3 { bottom: -5%; right: 10%; animation-delay: 2s; color: #47A248; }
 
@@ -313,7 +313,7 @@
 .scroll-wheel {
   width: 4px;
   height: 8px;
-  background: #60a5fa;
+  background: #34d399;
   border-radius: 2px;
   animation: scrollWheel 2s infinite;
 }
@@ -345,15 +345,24 @@
 
 @media (max-width: 640px) {
   .hero { padding: 6rem 0 2rem; }
-  .hero-title { font-size: 2.8rem; }
+  .hero-title { font-size: 2.3rem; }
+  .hero-subtitle { font-size: 1.3rem; }
+  .title-intro { font-size: 1.2rem; }
+  .hero-description { font-size: 1rem; }
   .hero-actions { flex-direction: column; width: 100%; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   
   .hero-visual-wrapper {
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
   }
   
-  .item-1 { right: -10%; }
-  .item-2 { left: -15%; }
+  .floating-elements .float-item {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .item-1 { right: -5%; transform: scale(0.9); }
+  .item-2 { left: -5%; transform: scale(0.9); }
+  .item-3 { right: -5%; bottom: -5%; transform: scale(0.9); }
 }

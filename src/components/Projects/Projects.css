@@ -1,7 +1,7 @@
 /* Projects Section - Elite Design */
 .projects {
   padding: 120px 0;
-  background-color: #030712;
+  background-color: #040b08;
   position: relative;
   overflow: hidden;
 }
@@ -52,10 +52,10 @@
 }
 
 .show-more-btn:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: #3b82f6;
+  background: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 15px 30px rgba(16, 185, 129, 0.2);
   letter-spacing: 1px;
 }
 

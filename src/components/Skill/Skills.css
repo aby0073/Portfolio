@@ -1,7 +1,7 @@
 /* Skills Section - Ultra Compact Marquee Design */
 .skills-section {
   padding: 60px 0;
-  background-color: #030712;
+  background-color: #040b08;
   position: relative;
   overflow: hidden;
 }
@@ -61,10 +61,10 @@
 }
 
 .skill-circle-mini:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: #3b82f6;
+  background: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
   transform: scale(1.15) rotate(5deg);
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
 }
 
 /* Tooltip on Hover */
@@ -73,7 +73,7 @@
   bottom: -45px;
   left: 50%;
   transform: translateX(-50%) translateY(-10px);
-  background: #1e293b;
+  background: #091b10;
   color: #fff;
   padding: 5px 12px;
   border-radius: 6px;
@@ -120,9 +120,9 @@
 }
 
 .skill-tag-micro:hover {
-  color: #60a5fa;
-  background: rgba(59, 130, 246, 0.05);
-  border-color: rgba(59, 130, 246, 0.2);
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.05);
+  border-color: rgba(16, 185, 129, 0.2);
 }
 
 /* Responsive */

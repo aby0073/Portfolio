@@ -11,11 +11,11 @@
 }
 
 .navbar.scrolled {
-  background: rgba(17, 24, 39, 0.8);
+  background: rgba(6, 19, 14, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.1);
 }
 
 .navbar-container {
@@ -95,7 +95,7 @@
 }
 
 .hamburger:hover {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(16, 185, 129, 0.1);
 }
 
 .bar {
@@ -134,7 +134,7 @@
     right: 0;
     flex-direction: column;
     align-items: center;
-    background: rgba(17, 24, 39, 0.98);
+    background: rgba(6, 19, 14, 0.98);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     max-height: 0;
@@ -163,7 +163,7 @@
   }
 
   .navbar-link:hover {
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(16, 185, 129, 0.1);
   }
 
   .navbar-link::after {
