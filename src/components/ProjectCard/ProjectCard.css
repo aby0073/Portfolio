@@ -128,10 +128,36 @@
 /* Responsive */
 @media (max-width: 480px) {
   .project-image-wrapper {
-    height: 200px;
+    height: 180px;
   }
   
+  .project-content {
+    padding: 18px 16px;
+  }
+
   .project-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .project-tags {
+    gap: 6px;
+  }
+
+  .project-tag {
+    font-size: 0.72rem;
+    padding: 3px 10px;
+  }
+
+  .overlay-link {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
   }
 }

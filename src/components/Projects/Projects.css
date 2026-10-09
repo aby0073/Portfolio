@@ -72,25 +72,36 @@
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
-  .projects-grid {
-    padding: 0 20px;
-  }
-}
-
 @media (max-width: 768px) {
   .projects {
-    padding: 80px 20px;
+    padding: 70px 0;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0;
+  }
+
+  .show-more-wrapper {
+    margin-top: 40px;
   }
 
   .show-more-btn {
     width: 100%;
+    max-width: 320px;
     justify-content: center;
     padding: 14px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects-grid {
+    gap: 16px;
   }
 }

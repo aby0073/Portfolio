@@ -343,41 +343,100 @@
   .hero-container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 5rem;
+    gap: 4rem;
   }
   
   .hero-content { align-items: center; }
-  .hero-title { font-size: 3.5rem; }
+  .hero-title { font-size: 3.2rem; }
   .hero-subtitle { font-size: 1.5rem; }
   .hero-actions { justify-content: center; }
   .hero-social { justify-content: center; }
   
   .hero-visual-wrapper {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 640px) {
-  .hero { padding: 6rem 0 2rem; }
-  .hero-title { font-size: 2.3rem; }
-  .hero-subtitle { font-size: 1.3rem; }
-  .title-intro { font-size: 1.2rem; }
-  .hero-description { font-size: 1rem; }
-  .hero-actions { flex-direction: column; width: 100%; }
-  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero { 
+    padding: 6rem 0 2rem; 
+    overflow-x: hidden;
+  }
+
+  .hero-container {
+    padding: 0 1.25rem;
+    gap: 2.5rem;
+  }
+
+  .hero-title { 
+    font-size: 2.2rem; 
+    line-height: 1.15;
+  }
+
+  .hero-subtitle { font-size: 1.25rem; }
+  .title-intro { font-size: 1.1rem; }
+  .hero-description { 
+    font-size: 0.98rem; 
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .hero-actions { 
+    flex-direction: column; 
+    width: 100%; 
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn { 
+    width: 100%; 
+    justify-content: center; 
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+  }
   
   .hero-visual-wrapper {
     width: 220px;
     height: 220px;
+    margin: 0 auto;
   }
   
   .floating-elements .float-item {
     font-size: 0.75rem;
-    padding: 0.4rem 0.6rem;
+    padding: 0.35rem 0.65rem;
   }
   
-  .item-1 { right: -5%; transform: scale(0.9); }
-  .item-2 { left: -5%; transform: scale(0.9); }
-  .item-3 { right: -5%; bottom: -5%; transform: scale(0.9); }
+  .item-1 { top: 0; right: 0; transform: scale(0.9); }
+  .item-2 { bottom: 15px; left: 0; transform: scale(0.9); }
+  .item-3 { bottom: -10px; right: 15px; transform: scale(0.9); }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5.5rem 0 1.5rem;
+  }
+
+  .hero-container {
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+    padding: 0.45rem 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-visual-wrapper {
+    width: 200px;
+    height: 200px;
+  }
 }

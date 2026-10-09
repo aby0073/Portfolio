@@ -178,10 +178,15 @@
 
 /* Responsive */
 @media (max-width: 968px) {
+  .about-section {
+    padding: 70px 0;
+  }
+
   .about-wrapper {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 35px;
+    padding: 0 1.25rem;
   }
 
   .about-content {
@@ -189,11 +194,27 @@
   }
 
   .about-subtitle {
-    font-size: 2rem;
+    font-size: 1.95rem;
+  }
+
+  .image-frame {
+    max-width: 260px;
+    margin: 0 auto;
+    aspect-ratio: auto;
+    padding: 12px;
+  }
+
+  .profile-img {
+    max-height: 270px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .highlight-pill {
     text-align: left;
+    padding: 11px 14px;
+    gap: 12px;
   }
 
   .about-quick-meta {
@@ -203,18 +224,71 @@
 
 @media (max-width: 480px) {
   .about-section {
-    padding: 70px 0;
+    padding: 55px 0;
   }
 
-  .image-frame {
-    max-width: 260px;
+  .about-wrapper {
+    padding: 0 1rem;
+    gap: 25px;
+  }
+
+  .about-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
   }
 
   .about-subtitle {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    margin-bottom: 14px;
   }
 
   .about-description p {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+
+  .image-frame {
+    max-width: 220px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .profile-img {
+    max-height: 230px;
+  }
+
+  .key-highlights {
+    margin: 18px 0;
+    gap: 10px;
+  }
+
+  .highlight-pill {
+    padding: 10px 12px;
+    gap: 10px;
+    border-radius: 12px;
+  }
+
+  .highlight-icon {
+    font-size: 1rem;
+  }
+
+  .highlight-info strong {
+    font-size: 0.9rem;
+  }
+
+  .highlight-info span {
+    font-size: 0.8rem;
+  }
+
+  .about-quick-meta {
+    gap: 6px;
+    margin-top: 15px;
+  }
+
+  .meta-badge {
+    padding: 4px 10px;
+    font-size: 0.78rem;
   }
 }

@@ -19,18 +19,19 @@
 /* Marquee Logic */
 .marquee-wrapper {
   position: relative;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 20px 0 60px 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px 0 40px 0;
   display: flex;
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .marquee-track {
   display: flex;
   gap: 30px;
-  animation: scrollMarquee 40s linear infinite;
+  animation: scrollMarquee 35s linear infinite;
   width: max-content;
 }
 
@@ -128,7 +129,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .skills-section {
-    padding: 40px 0;
+    padding: 50px 0 30px;
   }
   
   .skill-circle-mini {
@@ -139,5 +140,40 @@
   
   .marquee-track {
     gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 40px 0 20px;
+  }
+
+  .compact-skills-header {
+    margin-bottom: 25px;
+  }
+
+  .compact-skills-header .section-title {
+    font-size: 1.6rem;
+  }
+
+  .skill-circle-mini {
+    width: 52px;
+    height: 52px;
+    font-size: 1.3rem;
+  }
+
+  .marquee-track {
+    gap: 15px;
+  }
+
+  .skill-tags-group {
+    margin-top: 30px;
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .skill-tag-micro {
+    font-size: 0.7rem;
+    padding: 3px 10px;
   }
 }
