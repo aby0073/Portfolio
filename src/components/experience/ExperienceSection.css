@@ -107,6 +107,11 @@
 }
 
 /* Premium Card Design */
+.experience-tilt-container {
+  width: 100%;
+  border-radius: 24px;
+}
+
 .experience-card-premium {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
@@ -114,15 +119,15 @@
   border-radius: 24px;
   padding: 30px;
   position: relative;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
   overflow: hidden;
+  width: 100%;
 }
 
-.experience-card-premium:hover {
+.experience-tilt-container:hover .experience-card-premium {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(52, 211, 153, 0.4);
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(16, 185, 129, 0.15);
 }
 
 .card-top {

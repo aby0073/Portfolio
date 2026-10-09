@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight, FaCode, FaFileAlt } from 'react-icons/fa';
+import ParticleCanvas3D from '../ThreeD/ParticleCanvas3D';
 import './Hero.css';
 
 const Hero = () => {
@@ -51,6 +52,9 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero">
+      {/* 3D Particle Constellation Canvas */}
+      <ParticleCanvas3D />
+
       {/* Background Ornaments */}
       <div className="hero-bg-blobs">
         <div className="blob blob-1"></div>
@@ -90,16 +94,25 @@ const Hero = () => {
             <a href="#contact" className="btn btn-outline">
               Let's Connect
             </a>
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-resume"
+              download="Abin_Roy_Resume.pdf"
+            >
+              <FaFileAlt /> Resume
+            </a>
           </div>
 
           <div className="hero-social">
-            <a href="https://github.com/aby0073" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://github.com/aby0073" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/abin-roy-s" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://linkedin.com/in/abin-roy-s" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="mailto:abinroy0073@gmail.com" className="social-link">
+            <a href="mailto:royabin963@gmail.com" className="social-link" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>

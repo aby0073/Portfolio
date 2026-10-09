@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import TiltCard3D from '../ThreeD/TiltCard3D';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="project-card">
+    <TiltCard3D className="project-tilt-wrapper" maxTilt={8} glare={true}>
+      <div className="project-card">
       <div className="project-image-wrapper">
         <img src={project.image} alt={project.title} className="project-image" />
         <div className="project-overlay">
@@ -44,7 +46,8 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
     </div>
-  );
+  </TiltCard3D>
+);
 };
 
 export default ProjectCard;

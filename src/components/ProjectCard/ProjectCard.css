@@ -1,21 +1,27 @@
-/* Project Card - Elite Glassmorphism Design */
+/* Project Card - Elite 3D Glassmorphism Design */
+.project-tilt-wrapper {
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+}
+
 .project-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   backdrop-filter: blur(10px);
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
+.project-tilt-wrapper:hover .project-card {
   background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(52, 211, 153, 0.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(52, 211, 153, 0.4);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 25px rgba(16, 185, 129, 0.2);
 }
 
 .project-image-wrapper {

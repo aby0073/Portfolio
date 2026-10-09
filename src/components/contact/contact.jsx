@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaPaperPlane, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPaperPlane, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -8,6 +8,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -22,6 +23,11 @@ const Contact = () => {
     );
 
     const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=royabin963@gmail.com&su=${subject}&body=${body}`;
+
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 6000);
 
     window.open(gmailURL, '_blank');
   };
@@ -69,10 +75,18 @@ const Contact = () => {
                 </div>
 
                 <div className="info-item">
+                  <div className="info-icon"><FaPhoneAlt /></div>
+                  <div className="info-text">
+                    <span>Phone</span>
+                    <a href="tel:+918301986504">+91 8301986504</a>
+                  </div>
+                </div>
+
+                <div className="info-item">
                   <div className="info-icon"><FaMapMarkerAlt /></div>
                   <div className="info-text">
                     <span>Location</span>
-                    <p>Kerala, India</p>
+                    <p>Kochi, Kerala, India</p>
                   </div>
                 </div>
               </div>
@@ -87,6 +101,11 @@ const Contact = () => {
 
           {/* Form Side */}
           <div className="contact-form-container" data-aos="fade-left">
+            {submitted && (
+              <div className="contact-success-alert">
+                <span>✓</span> Message prepared! Opening your email client to send to <strong>royabin963@gmail.com</strong>.
+              </div>
+            )}
             <form className="professional-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label>Full Name</label>

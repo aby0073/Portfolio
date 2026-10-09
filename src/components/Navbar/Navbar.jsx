@@ -21,14 +21,26 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <h2 className="navbar-brand">PORTFOLIO</h2>
+        <h2 className="navbar-brand">
+          ABIN<span className="navbar-brand-dot">.</span>
+        </h2>
 
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <Link to="home" smooth duration={100} onClick={closeMenu} className="navbar-link">Home</Link>
           <Link to="about" smooth duration={100} onClick={closeMenu} className="navbar-link">About</Link>
+          <Link to="experience" smooth duration={100} onClick={closeMenu} className="navbar-link">Experience</Link>
           <Link to="skills" smooth duration={100} onClick={closeMenu} className="navbar-link">Skills</Link>
           <Link to="projects" smooth duration={100} onClick={closeMenu} className="navbar-link">Projects</Link>
           <Link to="contact" smooth duration={100} onClick={closeMenu} className="navbar-link">Contact</Link>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+            className="navbar-resume-link"
+          >
+            Resume
+          </a>
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>

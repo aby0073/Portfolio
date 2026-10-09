@@ -176,6 +176,21 @@
   transform: translateY(-3px);
 }
 
+.btn-resume {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  color: #34d399;
+  backdrop-filter: blur(8px);
+}
+
+.btn-resume:hover {
+  background: rgba(16, 185, 129, 0.25);
+  border-color: #34d399;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.25);
+}
+
 /* 3. Social Links */
 .hero-social {
   display: flex;

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBriefcase, FaCalendarAlt } from "react-icons/fa";
+import TiltCard3D from "../ThreeD/TiltCard3D";
 import "./ExperienceSection.css";
 
 const ExperienceSection = () => {
@@ -48,33 +49,35 @@ const ExperienceSection = () => {
               </div>
               
               <div className="timeline-content">
-                <div className="experience-card-premium">
-                  <div className="card-top">
-                    <div className="company-info">
-                      <div className="company-logo-wrap">
-                        <img src={exp.logo} alt={exp.company} />
+                <TiltCard3D maxTilt={6} glare={true} className="experience-tilt-container">
+                  <div className="experience-card-premium">
+                    <div className="card-top">
+                      <div className="company-info">
+                        <div className="company-logo-wrap">
+                          <img src={exp.logo} alt={exp.company} />
+                        </div>
+                        <div className="company-meta">
+                          <h3 className="role-title">{exp.role}</h3>
+                          <p className="company-name">{exp.company}</p>
+                        </div>
                       </div>
-                      <div className="company-meta">
-                        <h3 className="role-title">{exp.role}</h3>
-                        <p className="company-name">{exp.company}</p>
+                      <div className="experience-date">
+                        <FaCalendarAlt />
+                        <span>{exp.duration}</span>
                       </div>
                     </div>
-                    <div className="experience-date">
-                      <FaCalendarAlt />
-                      <span>{exp.duration}</span>
-                    </div>
-                  </div>
 
-                  <div className="card-body">
-                    <ul className="description-list">
-                      {exp.description.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
+                    <div className="card-body">
+                      <ul className="description-list">
+                        {exp.description.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div className="card-footer-glow"></div>
                   </div>
-                  
-                  <div className="card-footer-glow"></div>
-                </div>
+                </TiltCard3D>
               </div>
             </div>
           ))}
